@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# Heavily based on the git-user script that was created by jon@endpointdev.com.
+
+import os
+import subprocess
 import sys
 
 # Dictionary mapping usernames to corresponding name and email
@@ -31,11 +35,9 @@ name = user_info[user]['name']
 email = user_info[user]['email']
 
 # Set environment variables and execute git command
-import os
 os.environ['GIT_AUTHOR_NAME'] = name
 os.environ['GIT_AUTHOR_EMAIL'] = email
 os.environ['GIT_COMMITTER_NAME'] = name
 os.environ['GIT_COMMITTER_EMAIL'] = email
 
-import subprocess
 subprocess.run(['git'] + sys.argv[2:])
