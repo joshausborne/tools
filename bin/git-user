@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Heavily based on the git-user script that was created by jon@endpointdev.com.
+# Heavily based on the git-user Bash script that was created by jon@endpointdev.com.
 
 import os
 import subprocess
