@@ -8,13 +8,13 @@ import sys
 
 # Dictionary mapping usernames to corresponding name and email
 user_info = {
-    'jmaus': {
+    'joshausborne': {
         'name': 'Josh Ausborne',
         'email': 'joshausborne@gmail.com'
     },
-    'jausborne': {
+    'otherjosh': {
         'name': 'Josh Ausborne',
-        'email': 'jausborne@endpointdev.com'
+        'email': 'josh@ausborne.net'
     }
 }
 
